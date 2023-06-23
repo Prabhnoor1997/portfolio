@@ -6,6 +6,13 @@ import Link from 'next/link';
 type Props = {}
 
 export default function Hero({}: Props) {
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const [text, count] = useTypewriter({
     words:[
     "Hi , the name is Prabhnoor",
@@ -20,7 +27,7 @@ export default function Hero({}: Props) {
     <div className="h-screen flex justify-center flex-col space-y-8 items-center  overflow-hidden">
         <BackgroundCircles></BackgroundCircles>
         <img className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src=""
+        src="/assets/face.JPG"
         alt=""
         />
         <div className='z-20'>
@@ -34,16 +41,16 @@ export default function Hero({}: Props) {
         </h1>
         <div className="pt-5">
           <Link href="#about">
-          <button className="heroButtons">About</button>
+          <button className="heroButtons" onClick={() => scrollToSection('about')}>About</button>
           </Link>
-          <Link href="#about">
-          <button className="heroButtons">Experience</button>
+          <Link href="#Experience">
+          <button className="heroButtons" onClick={() => scrollToSection('experience')}>Experience</button>
           </Link>
-          <Link href="#about">
-          <button className="heroButtons">Skills</button>
+          <Link href="#Skills">
+          <button className="heroButtons" onClick={() => scrollToSection('Skills')}>Skills</button>
           </Link>
-          <Link href="#about">
-          <button className="heroButtons">Projects</button>
+          <Link href="#Projects">
+          <button className="heroButtons" onClick={() => scrollToSection('project')}>Projects</button>
           </Link>
           
         </div>

@@ -23,20 +23,21 @@ function Header({}: Props) {
 
         <div className="flex flex-row items-center">
             <SocialIcon 
-            url="https://www.youtube.com"
+            url="https://www.github.com/Prabhnoor1997"
             fgColor='gray'
             bgColor='transparent'
             />
             <SocialIcon 
-            url="https://www.youtube.com"
+            url="https://www.linkedin.com/Prabhnoorbhattal"
             fgColor='gray'
             bgColor='transparent'
             />
             <SocialIcon 
-            url="https://www.youtube.com"
+            url="https://www.instagram.com/parrybhattal"
             fgColor='gray'
             bgColor='transparent'
             />
+            
         </div>
         </motion.div>
         <div>
@@ -59,6 +60,7 @@ function Header({}: Props) {
             network="email"
             fgColor='gray'
             bgColor='transparent'
+            url='mailto:prabhnoor.parry@gmail.com'
             />
             <p className='uppercase hidden md:inline-flex text-gray-400'>Get in Touch</p>
             </motion.div>
