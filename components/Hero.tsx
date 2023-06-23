@@ -28,7 +28,7 @@ export default function Hero({}: Props) {
     <div className="h-screen flex justify-center flex-col space-y-8 items-center  overflow-hidden">
         <BackgroundCircles></BackgroundCircles>
         <img className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src={"/assets/face.jpeg"}
+        src={"/assets/face.JPEG"}
         alt=""
         />
         <div className='z-20'>
