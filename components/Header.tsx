@@ -28,7 +28,7 @@ function Header({}: Props) {
             bgColor='transparent'
             />
             <SocialIcon 
-            url="https://www.linkedin.com/Prabhnoorbhattal"
+            url="https://www.linkedin.com/in/Prabhnoorbhattal"
             fgColor='gray'
             bgColor='transparent'
             />
